@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" verbose="1" parallel="false">
+	<test name="Jupiter Test Automation" preserve-order="true">
+		<classes>
+			<class name="com.jupiter.tests.Jupiter_WebTests">
+				<methods>
+					<include name="TM_01_ValidateFieldsOnContactPage" />
+					<include name="TM_02_VerifyFeedbackSubmission" />
+					<include name="TM_03_VerifyContactPageWithInvalidData" />
+					<include name="TM_04_VerifyTheShoppingCartData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
